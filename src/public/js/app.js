@@ -86,6 +86,7 @@
 /************************************************************************/
 /******/ ({
 
+<<<<<<< Updated upstream
 /***/ "./node_modules/axios/index.js":
 /*!*************************************!*\
   !*** ./node_modules/axios/index.js ***!
@@ -50854,11 +50855,14 @@ module.exports = function(module) {
 
 /***/ }),
 
+=======
+>>>>>>> Stashed changes
 /***/ "./resources/js/app.js":
 /*!*****************************!*\
   !*** ./resources/js/app.js ***!
   \*****************************/
 /*! no exports provided */
+<<<<<<< Updated upstream
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -51152,6 +51156,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "staticRenderFns", function() { return _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_DirectoryShow_vue_vue_type_template_id_2d17f5af___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"]; });
 
 
+=======
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/Users/purvesh/code/streamline-test/src/resources/js/app.js'");
+>>>>>>> Stashed changes
 
 /***/ }),
 
@@ -51162,7 +51171,11 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+<<<<<<< Updated upstream
 // removed by extract-text-webpack-plugin
+=======
+throw new Error("Module build failed (from ./node_modules/css-loader/index.js):\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nError: ENOENT: no such file or directory, open '/Users/purvesh/code/streamline-test/src/resources/sass/app.scss'\n    at /Users/purvesh/code/streamline-test/src/node_modules/webpack/lib/NormalModule.js:316:20\n    at /Users/purvesh/code/streamline-test/src/node_modules/loader-runner/lib/LoaderRunner.js:367:11\n    at /Users/purvesh/code/streamline-test/src/node_modules/loader-runner/lib/LoaderRunner.js:203:19\n    at /Users/purvesh/code/streamline-test/src/node_modules/enhanced-resolve/lib/CachedInputFileSystem.js:85:15\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)");
+>>>>>>> Stashed changes
 
 /***/ }),
 
