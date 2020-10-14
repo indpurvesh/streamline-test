@@ -101,6 +101,8 @@ class DirectoryController extends Controller
      */
     public function destroy(Directory $directory)
     {
-        //
+        $directory->delete();
+
+        return redirect()->route('directory.index');
     }
 }
