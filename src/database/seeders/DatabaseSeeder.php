@@ -14,6 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        \App\Models\User::factory(1)
+            ->has(Directory::factory()->count(5))
+            ->create([
+                'email' => 'admin@admin.com'
+            ]);
         \App\Models\User::factory(3)
             ->has(Directory::factory()->count(5))
             ->create();

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\DirectoryRequest;
 use App\Models\Directory;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class DirectoryController extends Controller
 {
@@ -42,7 +43,7 @@ class DirectoryController extends Controller
      */
     public function store(DirectoryRequest $request)
     {
-        $request->merge(['user_id' => 1]);
+        $request->merge(['user_id' => Auth::user()->id]);
         Directory::create($request->all());
 
         return redirect()->route('directory.index');
@@ -85,9 +86,11 @@ class DirectoryController extends Controller
      * @param  \App\Models\Directory  $directory
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Directory $directory)
+    public function update(DirectoryRequest $request, Directory $directory)
     {
-        //
+        $directory->update($request->all());
+
+        return redirect()->route('directory.index');
     }
 
     /**

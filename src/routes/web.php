@@ -22,7 +22,11 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-
-Route::resource('directory', DirectoryController::class);
-Route::post('directory/{directory}/file', [FileController::class, 'upload']);
+Route::middleware('auth')
+    ->group(function () {
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        
+        Route::resource('directory', DirectoryController::class);
+        Route::post('directory/{directory}/file', [FileController::class, 'upload']);
+        Route::get('directory/{directory}/file', [FileController::class, 'index']);
+    });

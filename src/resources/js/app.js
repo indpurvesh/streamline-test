@@ -19,7 +19,10 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
+Vue.component('dashboard-widget', require('./components/DashboardWidget.vue').default);
+Vue.component('directory-item', require('./components/DirectoryItem.vue').default);
 Vue.component('directory-show', require('./components/DirectoryShow.vue').default);
+
 import VModal from 'vue-js-modal/dist/index.nocss.js'
 import 'vue-js-modal/dist/styles.css'
 

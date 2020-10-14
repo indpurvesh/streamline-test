@@ -14,6 +14,15 @@ class FileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function index(Directory $directory)
+    {
+        return $directory->load(['children', 'files']);
+    }
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
     public function upload(Directory $directory, FileRequest $request)
     {
         /** @var $file \Illuminate\Http\UploadedFile */
